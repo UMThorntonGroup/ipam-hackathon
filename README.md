@@ -111,7 +111,7 @@ Once your simulation is done you can exit the interactive docker container with
 exit
 ```
 
-## Visualizing the result from allanCahn application
+## Visualizing the result from `allenCahn` application
 Open a new terminal window (leaving the one with the simulation running).
 
 Open VisIt.
@@ -121,11 +121,15 @@ Select "Open" under the Sources section.
 
 Navigate to the folder with your simulation results (which should be ~/DockerWorkspace/ipam-hackathon/prisms-pf-2.4/applications/allenCahn) and click on the solution files and press OK.
 
+<img width="1185" height="960" alt="image" src="https://github.com/user-attachments/assets/e71a0f6e-671c-4c1b-9e86-af75fcf7cdab" />
+
 Under Plots, select Add, pseudocolor, n to plot the order parameter.  
 
 Click draw. This will show the two phase "microstructure". You can use the right arrow to see the evolution of the system, and the left arrow to go backwards in simulation time.
 
-## Visualizing the result from microgalvanic application
+<img width="1059" height="961" alt="image" src="https://github.com/user-attachments/assets/d089d5ab-2184-4b17-befa-b8feff5f54c7" />
+
+## Visualizing the result from `corrosion_microgalvanic` application
 
 Select "Open" under the Sources section.
 
@@ -140,6 +144,7 @@ Here, the plot is a little more complicated, so we prepared a script for you. To
 <img width="529" height="284" alt="image" src="https://github.com/user-attachments/assets/6bb81560-c342-4a8b-89a7-2af94207f66e" />
 
 Sourcing the load_plots.py file. This will be different depending on whether you're on Linux/macOS and Windows due to the way VisIt installs.
+
 **Linux/macOS**
 ```
 Source("../../../load_plots.py")
