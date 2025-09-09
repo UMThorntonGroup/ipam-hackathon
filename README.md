@@ -111,14 +111,22 @@ Once your simulation is done you can exit the interactive docker container with
 exit
 ```
 
-## Visualizing the result
+## Visualizing the result from allanCahn application
 Open a new terminal window (leaving the one with the simulation running).
 
-Open VisIt and hit the open button under the sources section.
+Open VisIt.
+Select "Open" under the Sources section.
+Navigate to the folder with your simulation results (which should be ~/DockerWorkspace/ipam-hackathon/prisms-pf-2.4/applications/allenCahn) and click on the solution files and press OK.
+Under Plots, select Add, pseudocolor, n to plot the order parameter.  
+Click draw. This will show the two phase "microstructure". You can use the right arrow to see the evolution of the system, and the left arrow to go backwards in simulation time.
+
+## Visualizing the result from microgalvanic application
+
+Select "Open" under the Sources section.
 
 <img width="221" height="128" alt="image" src="https://github.com/user-attachments/assets/890ac9c9-9e6a-4ebb-abbd-251bcb380cdb" />
 
-Navigate the folder with your simulation results and click on the solution files and press OK.
+Navigate the folder with your simulation results (which should be ~/DockerWorkspace/ipam-hackathon/prisms-pf-2.4/applications/corrosion_microgalvanic) and click on the solution files and press OK.
 
 <img width="848" height="745" alt="image" src="https://github.com/user-attachments/assets/b6a052cc-6ed5-4f77-bed9-ff17398776c4" />
 
