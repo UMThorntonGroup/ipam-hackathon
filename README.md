@@ -181,7 +181,7 @@ If all works, you should see something like this
 
 <img width="1434" height="1328" alt="image" src="https://github.com/user-attachments/assets/6c37811c-0739-4160-b783-34963c7e2e7c" />
 
-Again, the right arrow will advance the figure in time. You should see the surfaces recedeing due to corrosion in this case.
+Again, the right arrow will advance the figure in time. You should see the surfaces receding due to corrosion in this case.
 
 ## Further learning
 
