@@ -13,3 +13,38 @@ Now, clone this repo and its submodules.
 git clone --recurse-submodules https://github.com/UMThorntonGroup/ipam-hackathon.git
 ```
 **_NOTE:_** If you have a git version prior to 2.13, use `--recursive` instead of `--recurse-submodules`.
+
+## Pulling the docker image
+Download the docker image with
+```
+docker pull prismspf/prismspf:2.4
+```
+This shouldn't take too long since the compressed size in only ~1.8GB.
+
+## Launching the docker image
+For this next part, we're going to run an interactive container.
+
+**Linux & macOS**
+```
+docker run -ti -v $(pwd)/prisms-pf-2.4/applications:/home/dealii/phaseField/applications prismspf/prismspf:2.4
+```
+**Windows PowerShell**
+```
+docker run -ti -v ${PWD}/prisms-pf-2.4/applications:/home/dealii/phaseField/applications prismspf/prismspf:2.4
+```
+**Windows Command Prompt**
+```
+docker run -ti -v %cd%/prisms-pf-2.4/applications:/home/dealii/phaseField/applications prismspf/prismspf:2.4
+```
+
+
+This will link your local applications directory (the one in `prisms-pf-2.4`) to the one in the Docker image. If you plan to modify the core library, you should link one directory higher to preserve your changes.
+
+## Running the microgalvanic corrosion application
+To run the `corrosion_microgalvanic` application, you can use the following commands:
+```
+cd corrosion_microgalvanic
+cmake .
+make release
+mpirun -n 1 ./main
+```
