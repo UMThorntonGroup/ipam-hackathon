@@ -137,3 +137,9 @@ You should get something like this:
 
 <img width="1434" height="1328" alt="image" src="https://github.com/user-attachments/assets/6c37811c-0739-4160-b783-34963c7e2e7c" />
 
+## Further learning
+
+You can learn more about PRISMS-PF at [the PRISMS-PF website](https://prisms-center.github.io/phaseField/).
+
+There are also other tools develoed within the PRISMS Center; see [the PRISMS Center Software website](https://www.prisms-center.org/#/ctools/software).
+
