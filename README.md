@@ -60,8 +60,14 @@ This will link your local applications directory (the one in `prisms-pf-2.4`) to
 This is just a simply test to make sure everything is working.
 ```
 cd applications/allenCahn
+```
+```
 cmake .
+```
+```
 make release
+```
+```
 mpirun -n 1 ./main
 ```
 
@@ -69,8 +75,14 @@ mpirun -n 1 ./main
 To run the `corrosion_microgalvanic` application, you can use the following commands:
 ```
 cd applications/corrosion_microgalvanic
+```
+```
 cmake .
+```
+```
 make release
+```
+```
 mpirun -n 1 ./main
 ```
 Once your simulation is done you can exit the interactive docker container with
