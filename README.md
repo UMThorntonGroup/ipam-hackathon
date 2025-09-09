@@ -37,6 +37,14 @@ git clone --recurse-submodules https://github.com/UMThorntonGroup/ipam-hackathon
 ## Launching the docker image
 For this next part, we're going to run an interactive container.
 
+First, go to the `ipam-hackathon` directory:
+
+```
+cd ipam-hackathon
+```
+
+Then launch the container with one of the following commands:
+
 **Linux & macOS (bash and z-shell)**
 ```
 docker run -ti -v $(pwd)/prisms-pf-2.4/applications:/home/dealii/phaseField/applications prismspf/prismspf:2.4
