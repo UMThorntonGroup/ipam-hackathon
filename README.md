@@ -150,6 +150,7 @@ Navigate the folder with your simulation results (which should be ~/DockerWorksp
 <img width="848" height="745" alt="image" src="https://github.com/user-attachments/assets/b6a052cc-6ed5-4f77-bed9-ff17398776c4" />
 
 Here, the plot is a little more complicated, so we prepared a script for you. First we're going to copy the script to the `corrosion_microgalvanic` applications.
+
 **Linux/macOS**
 ```
 cp load_plots.py prisms-pf-2.4/applications/corrosion_microgalvanic
