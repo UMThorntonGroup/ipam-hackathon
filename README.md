@@ -116,8 +116,13 @@ Open a new terminal window (leaving the one with the simulation running).
 
 Open VisIt.
 Select "Open" under the Sources section.
+
+<img width="221" height="128" alt="image" src="https://github.com/user-attachments/assets/890ac9c9-9e6a-4ebb-abbd-251bcb380cdb" />
+
 Navigate to the folder with your simulation results (which should be ~/DockerWorkspace/ipam-hackathon/prisms-pf-2.4/applications/allenCahn) and click on the solution files and press OK.
+
 Under Plots, select Add, pseudocolor, n to plot the order parameter.  
+
 Click draw. This will show the two phase "microstructure". You can use the right arrow to see the evolution of the system, and the left arrow to go backwards in simulation time.
 
 ## Visualizing the result from microgalvanic application
@@ -130,7 +135,7 @@ Navigate the folder with your simulation results (which should be ~/DockerWorksp
 
 <img width="848" height="745" alt="image" src="https://github.com/user-attachments/assets/b6a052cc-6ed5-4f77-bed9-ff17398776c4" />
 
-Launch the CLI.
+Here, the plot is a little more complicated, so we prepared a script for you. To use the script, launch the CLI:
 
 <img width="529" height="284" alt="image" src="https://github.com/user-attachments/assets/6bb81560-c342-4a8b-89a7-2af94207f66e" />
 
