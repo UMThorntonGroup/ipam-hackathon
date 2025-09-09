@@ -129,7 +129,7 @@ Click draw. This will show the two phase "microstructure". You can use the right
 
 <img width="1059" height="961" alt="image" src="https://github.com/user-attachments/assets/d089d5ab-2184-4b17-befa-b8feff5f54c7" />
 
-The default setting can look ugly, but there are setting that could be adjusted to make it look better (see below). If you are interested, please let me know and I'll try to help. (Generally, reduced the font size in "Annotation" and "View" under the Controls menu at the top tool bar.)
+The default setting can look ugly, but there are setting that could be adjusted to make it look better (see below). If you are interested, please let me know and I'll try to help. (Generally, reduce the font size in "Annotations" under the "Controls" menu at the top tool bar.)
 
 ## Visualizing the result from `corrosion_microgalvanic` application
 
@@ -158,14 +158,9 @@ Source("DockerWorkspace/ipam-hackathon/prisms-pf-2.4/applications/corrosion_micr
 Source("../../path/to/ipam-hackathon/load_plots.py")
 ```
 
-Alternatively, if you want to specify an absolute path, you need to write a little python.
-```
-import os
-path = "~/path/to/ipam-hackathon/load_plots.py"
-Source(os.path.expanduser(path))
-```
+If this does not work (meaning it cannot find the python script where you specified), you need to do "pwd" within the corrosion_microgalvanic folder and use the abosolute path, instead of "DockerWorkspace/ipam-hackathon/prisms-pf-2.4/applications/corrosion_microgalvanic/" before load_plots.py.
 
-You should see something like this:
+If all works, you should see something like this:
 
 <img width="1434" height="1328" alt="image" src="https://github.com/user-attachments/assets/6c37811c-0739-4160-b783-34963c7e2e7c" />
 
