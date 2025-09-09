@@ -1,18 +1,22 @@
-# ipam-hackathon
+# IPAM-Tutorial
 A small code that explains the docker installation, running, and visualization of the PRISMS-PF microgalvanic corrosion application.
 
 ## Getting started
-For this demo, we're going to use Docker to grab an image of PRISMS-PF v2.4.0 and run one of our pre-built applications, microgalvanic corrosion.
+For this demo, we're going to use Docker to grab an image of PRISMS-PF v2.4.0 and run one of our pre-built applications, allenCahn and microgalvanic corrosion.
 
 If you want a brief explanation about what Docker is and why we use it, go [here](https://prisms-center.github.io/phaseField/doxygen/3.0.0-pre/docker.html). **_NOTE:_** The documentation for PRISMS-PF 3.0 is being redone.
 
-To begin, please install Docker to your machine. You can find instructions for installing Docker on the official [Docker website](https://docs.docker.com/get-started/get-docker/).
+To begin, please install Docker to your machine. You can find instructions for installing Docker on the official [Docker website](https://docs.docker.com/get-started/get-docker/). In addition, you will need VisIt for visualization, which can be obtained from the [VisIt website](https://visit-dav.github.io/visit-website/releases-as-tables/#latest).
 
-Now, clone this repo and its submodules.
+## Create a directory to hold the PRISMS-PF applications folder
+For example type 
 ```
-git clone --recurse-submodules https://github.com/UMThorntonGroup/ipam-hackathon.git
+mkdir ~/DockerWorkspace
 ```
-**_NOTE:_** If you have a git version prior to 2.13, use `--recursive` instead of `--recurse-submodules`.
+and go to that directory by  
+```
+cd ~/DockerWorkspace
+```
 
 ## Pulling the docker image
 Download the docker image with
@@ -20,6 +24,15 @@ Download the docker image with
 docker pull prismspf/prismspf:2.4
 ```
 This shouldn't take too long since the compressed size in only ~1.8GB.
+
+## Clone the repo
+
+Now, clone the PRISMS-PF v2.4.0 repo and its submodules.
+```
+git clone --recurse-submodules https://github.com/UMThorntonGroup/ipam-hackathon.git
+```
+**_NOTE:_** If you have a git version prior to 2.13, use `--recursive` instead of `--recurse-submodules`.
+
 
 ## Launching the docker image
 For this next part, we're going to run an interactive container.
