@@ -129,7 +129,11 @@ Click draw. This will show the two phase "microstructure". You can use the right
 
 <img width="1059" height="961" alt="image" src="https://github.com/user-attachments/assets/d089d5ab-2184-4b17-befa-b8feff5f54c7" />
 
+The default setting can look ugly, but there are setting that could be adjusted to make it look better (see below). If you are interested, please let me know and I'll try to help. (Generally, reduced the font size in "Annotation" and "View" under the Controls menu at the top tool bar.)
+
 ## Visualizing the result from `corrosion_microgalvanic` application
+
+First quit VisIt, and restart another session. This will clear out any setting that was used for the previous plots.
 
 Select "Open" under the Sources section.
 
@@ -147,7 +151,7 @@ Sourcing the load_plots.py file. This will be different depending on whether you
 
 **Linux/macOS**
 ```
-Source("../../../load_plots.py")
+Source("DockerWorkspace/ipam-hackathon/prisms-pf-2.4/applications/corrosion_microgalvanic/load_plots.py")
 ```
 **Windows**
 ```
@@ -161,9 +165,11 @@ path = "~/path/to/ipam-hackathon/load_plots.py"
 Source(os.path.expanduser(path))
 ```
 
-You should get something like this:
+You should see something like this:
 
 <img width="1434" height="1328" alt="image" src="https://github.com/user-attachments/assets/6c37811c-0739-4160-b783-34963c7e2e7c" />
+
+Again, the right arrow will advance the figure in time. You should see the surfaces recedeing due to corrosion in this case.
 
 ## Further learning
 
