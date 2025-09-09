@@ -48,3 +48,7 @@ cmake .
 make release
 mpirun -n 1 ./main
 ```
+Once your simulation is done you can exit the interactive docker container with
+```
+exit
+```
