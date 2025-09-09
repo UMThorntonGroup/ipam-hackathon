@@ -154,6 +154,13 @@ Source("../../../load_plots.py")
 Source("../../path/to/ipam-hackathon/load_plots.py")
 ```
 
+Alternatively, if you want to specify an absolute path, you need to write a little python.
+```
+import os
+path = "~/path/to/ipam-hackathon/load_plots.py"
+Source(os.path.expanduser(path))
+```
+
 You should get something like this:
 
 <img width="1434" height="1328" alt="image" src="https://github.com/user-attachments/assets/6c37811c-0739-4160-b783-34963c7e2e7c" />
