@@ -64,3 +64,27 @@ Once your simulation is done you can exit the interactive docker container with
 ```
 exit
 ```
+
+## Visualizing the result
+Open VisIt and hit the open button under the sources section.
+
+<img width="221" height="128" alt="image" src="https://github.com/user-attachments/assets/890ac9c9-9e6a-4ebb-abbd-251bcb380cdb" />
+
+Navigate the folder with your simulation results and click on the solution files and press OK.
+
+<img width="848" height="745" alt="image" src="https://github.com/user-attachments/assets/b6a052cc-6ed5-4f77-bed9-ff17398776c4" />
+
+Launch the CLI.
+
+<img width="529" height="284" alt="image" src="https://github.com/user-attachments/assets/6bb81560-c342-4a8b-89a7-2af94207f66e" />
+
+Sourcing the load_plots.py file. This will be different depending on whether you're on Linux/macOS and Windows due to the way VisIt installs.
+**Linux/macOS**
+Source("../../load_plots.py")
+**Windows**
+Source("../../path/to/ipam-hackathon/load_plots.py")
+
+You should get something like this:
+
+<img width="1434" height="1328" alt="image" src="https://github.com/user-attachments/assets/6c37811c-0739-4160-b783-34963c7e2e7c" />
+
