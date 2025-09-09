@@ -168,7 +168,7 @@ To use the script, launch the CLI:
 
 <img width="529" height="284" alt="image" src="https://github.com/user-attachments/assets/6bb81560-c342-4a8b-89a7-2af94207f66e" />
 
-Sourcing the load_plots.py file. This will be different depending on whether you're on Linux/macOS and Windows due to the way VisIt installs.
+To source the `load_plots.py` file, paste the following command in the newly opened CLI terminal window:
 
 **Linux/macOS/Windows**
 ```
