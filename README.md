@@ -105,12 +105,15 @@ make release
 ```
 mpirun -n 1 ./main
 ```
+This simulation will likely take a while, so we will move onto visualization while this is running.
 Once your simulation is done you can exit the interactive docker container with
 ```
 exit
 ```
 
 ## Visualizing the result
+Open a new terminal window (leaving the one with the simulation running).
+
 Open VisIt and hit the open button under the sources section.
 
 <img width="221" height="128" alt="image" src="https://github.com/user-attachments/assets/890ac9c9-9e6a-4ebb-abbd-251bcb380cdb" />
