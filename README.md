@@ -131,7 +131,7 @@ Navigate to the folder with your simulation results (which should be `~/DockerWo
 
 Under Plots, select Add, pseudocolor, n to plot the order parameter.  
 
-Click draw. This will show the two phase "microstructure". You can use the right arrow to see the evolution of the system, and the left arrow to go backwards in simulation time.
+Click on Draw. This will show the two phase "microstructure". You can use the right arrow to see the evolution of the system, and the left arrow to go backwards in simulation time.
 
 <img width="1059" height="961" alt="image" src="https://github.com/user-attachments/assets/d089d5ab-2184-4b17-befa-b8feff5f54c7" />
 
