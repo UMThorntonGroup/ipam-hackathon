@@ -24,9 +24,13 @@ This shouldn't take too long since the compressed size in only ~1.8GB.
 ## Launching the docker image
 For this next part, we're going to run an interactive container.
 
-**Linux & macOS**
+**Linux & macOS (bash and z-shell)**
 ```
 docker run -ti -v $(pwd)/prisms-pf-2.4/applications:/home/dealii/phaseField/applications prismspf/prismspf:2.4
+```
+**macOS (c-shell)**
+```
+docker run -ti -v `pwd`/prisms-pf-2.4/applications:/home/dealii/phaseField/applications prismspf/prismspf:2.4
 ```
 **Windows PowerShell**
 ```
@@ -37,8 +41,16 @@ docker run -ti -v ${PWD}/prisms-pf-2.4/applications:/home/dealii/phaseField/appl
 docker run -ti -v %cd%/prisms-pf-2.4/applications:/home/dealii/phaseField/applications prismspf/prismspf:2.4
 ```
 
-
 This will link your local applications directory (the one in `prisms-pf-2.4`) to the one in the Docker image. If you plan to modify the core library, you should link one directory higher to preserve your changes.
+
+## Running the Allen-Cahn application
+This is just a simply test to make sure everything is working.
+```
+cd applications/allenCahn
+cmake .
+make release
+mpirun -n 1 ./main
+```
 
 ## Running the microgalvanic corrosion application
 To run the `corrosion_microgalvanic` application, you can use the following commands:
