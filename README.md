@@ -81,7 +81,7 @@ Launch the CLI.
 Sourcing the load_plots.py file. This will be different depending on whether you're on Linux/macOS and Windows due to the way VisIt installs.
 **Linux/macOS**
 ```
-Source("../../load_plots.py")
+Source("../../../load_plots.py")
 ```
 **Windows**
 ```
