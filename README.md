@@ -78,7 +78,7 @@ cmake .
 make release
 ```
 ```
-mpirun -n 1 ./main
+./main
 ```
 After the run is complete, check to see the output files have been created.  
 ```
@@ -108,7 +108,7 @@ cmake .
 make release
 ```
 ```
-mpirun -n 1 ./main
+./main
 ```
 This simulation will likely take a while, so we will move onto visualization while this is running.
 
