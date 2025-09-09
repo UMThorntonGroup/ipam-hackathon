@@ -1,6 +1,6 @@
 #!/usr/bin/env python3# Step 1: Open a database (the whole .vtu time series)
-dbname="solution-*.vtu database"
-OpenDatabase(dbname)
+#dbname="solution-*.vtu database"
+#OpenDatabase(dbname)
 
 # Add plots 
 # Plot Phi with an isovolume operator for which 
