@@ -43,7 +43,7 @@ This will link your local applications directory (the one in `prisms-pf-2.4`) to
 ## Running the microgalvanic corrosion application
 To run the `corrosion_microgalvanic` application, you can use the following commands:
 ```
-cd corrosion_microgalvanic
+cd applications/corrosion_microgalvanic
 cmake .
 make release
 mpirun -n 1 ./main
