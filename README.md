@@ -65,7 +65,9 @@ docker run -ti -v %cd%/prisms-pf-2.4/applications:/home/dealii/phaseField/applic
 This will link your local applications directory (the one in `prisms-pf-2.4`) to the one in the Docker image. If you plan to modify the core library, you should link one directory higher to preserve your changes.
 
 ## Running the Allen-Cahn application
-This is just a simply test to make sure everything is working.
+Allen-Cahn equation simulates the evolution of nonconserved an order parameter (or multiple order parameters). We use this as a simple test to make sure everything is working and get you started.
+
+Click on the copy icon on the right of each line, and paste into the terminal window (and hit return). You can ignore the warnings.
 ```
 cd applications/allenCahn
 ```
@@ -78,8 +80,18 @@ make release
 ```
 mpirun -n 1 ./main
 ```
+After the run is complete, check to see the output files have been created.  
+```
+ls
+```
+You should see files named "solution-xxxx.vtu" (xxxx is a number) if all worked. These files have the snapshots of data (inlcuding the order parameter) from the simulation. We will visualize the results later.
 
 ## Running the microgalvanic corrosion application
+
+Two of the many applications set up in PRISMS-PF release simulate corrosion. One of these simulates microgalvanic corrosion, in which two phases of an alloy are in contact. The details can be found in the pdf document in the corrosion_microgalvanic folder (see below) and in the following publication.
+
+Goel, V., Lyu, Y., DeWitt, S. et al. Simulating microgalvanic corrosion in alloys using the PRISMS phase-field framework. MRS Communications 12, 1050–1059 (2022). https://doi.org/10.1557/s43579-022-00266-6
+
 To run the `corrosion_microgalvanic` application, you can use the following commands:
 ```
 cd applications/corrosion_microgalvanic
